@@ -1,0 +1,68 @@
+.title {
+    font-size: 42px;
+    font-family: 'Audiowide', cursive;
+    text-align: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 40px;
+}
+  
+body {
+    background: rgba(0, 0, 255, 0.692);
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+  
+.calculator {
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+  
+.calcScreen {
+    background-color: #222222;
+    color: #fff;
+    font-size: 1.714285714em;
+    padding: 15px 25px;
+    text-align: right;
+    border: none;
+}
+  
+.calcKeys {
+    background-color: rgb(133, 133, 133);
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+  
+.calcKeys > * {
+    background-color: rgba(226, 223, 223, 0.548);
+    padding: 25px 40px;
+    position: relative;
+}
+  
+.calcKeys > *:active::before,
+.calcKeys > .is-depressed::before {
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    position: absolute;
+}
+  
+.keyOperator {
+    background: orange;
+    font-size: 40px;
+}
+  
+.keyEqual {
+    background: orange;
+    grid-column: 4;
+    grid-row: 3 / span 3;
+}

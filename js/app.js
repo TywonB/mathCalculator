@@ -12,8 +12,8 @@ function back() {
 }
 
 function equal() {
-    var exp = document.form.numberDisplay.value
-    if (exp) {
-        document.form.numberDisplay.value = eval(exp)
+    var value = document.form.numberDisplay.value
+    if (value) {
+        document.form.numberDisplay.value = eval(value)
     }
 }
